@@ -15,73 +15,38 @@ public class MainActivity extends ActionBarActivity {
     }
 
     /**
-     * Called when the user touches the "Spotify Streamer" button
+     * Called when the user touches a button
      */
-    public void spotifyToast(View view) {
+    public void displayToast(View view) {
         Context context = getApplicationContext();
-        CharSequence text = "This button will launch my spotify streamer app!";
+        CharSequence text = null;
         int duration = Toast.LENGTH_SHORT;
 
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-    }
+        switch (view.getId()) {
+            case R.id.spotify_streamer_button: text =
+                    "This button will launch my spotify streamer app!";
+                break;
 
-    /**
-     * Called when the user touches the "Scores App" button
-     */
-    public void scoresToast(View view) {
-        Context context = getApplicationContext();
-        CharSequence text = "This button will launch my scores app!";
-        int duration = Toast.LENGTH_SHORT;
+            case R.id.scores_button: text =
+                    "This button will launch my scores app!";
+                break;
 
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-    }
+            case R.id.library_button: text =
+                    "This button will launch my library app!";
+                break;
 
-    /**
-     * Called when the user touches the "Library App" button
-     */
-    public void libraryToast(View view) {
-        Context context = getApplicationContext();
-        CharSequence text = "This button will launch my library app!";
-        int duration = Toast.LENGTH_SHORT;
+            case R.id.build_it_bigger_button: text =
+                    "This button will launch my build it bigger app!";
+                break;
 
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-    }
+            case R.id.reader_button: text =
+                    "This button will launch my xyz reader app!";
+                break;
 
-    /**
-     * Called when the user touches the "Build It Bigger" button
-     */
-    public void biggerToast(View view) {
-        Context context = getApplicationContext();
-        CharSequence text = "This button will launch my build it bigger app!";
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-    }
-
-    /**
-     * Called when the user touches the "xyz Reader" button
-     */
-    public void readerToast(View view) {
-        Context context = getApplicationContext();
-        CharSequence text = "This button will launch my xyz reader app!";
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-    }
-
-    /**
-     * Called when the user touches the "Capstone" button
-     */
-    public void capstoneToast(View view) {
-        Context context = getApplicationContext();
-        CharSequence text = "This button will launch my capstone app!";
-        int duration = Toast.LENGTH_SHORT;
-
+            case R.id.capstone_button: text =
+                    "This button will launch my capstone app!";
+                break;
+        }
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
     }

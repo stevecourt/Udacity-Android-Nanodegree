@@ -33,43 +33,43 @@
             <Button
                 android:id="@+id/spotify_streamer_button"
                 style="@style/StandardButtonStyle"
-                android:onClick="spotifyToast"
-                android:text="@string/button1_text" />
+                android:onClick="displayToast"
+                android:text="@string/spotify_streamer_text" />
 
             <Button
                 android:id="@+id/scores_button"
                 style="@style/StandardButtonStyle"
                 android:layout_below="@id/spotify_streamer_button"
-                android:onClick="scoresToast"
-                android:text="@string/button2_text" />
+                android:onClick="displayToast"
+                android:text="@string/scores_app_text" />
 
             <Button
                 android:id="@+id/library_button"
                 style="@style/StandardButtonStyle"
                 android:layout_below="@id/scores_button"
-                android:onClick="libraryToast"
-                android:text="@string/button3_text" />
+                android:onClick="displayToast"
+                android:text="@string/library_app_text" />
 
             <Button
                 android:id="@+id/build_it_bigger_button"
                 style="@style/StandardButtonStyle"
                 android:layout_below="@id/library_button"
-                android:onClick="biggerToast"
-                android:text="@string/button4_text" />
+                android:onClick="displayToast"
+                android:text="@string/build_it_bigger_text" />
 
             <Button
                 android:id="@+id/reader_button"
                 style="@style/StandardButtonStyle"
                 android:layout_below="@id/build_it_bigger_button"
-                android:onClick="readerToast"
-                android:text="@string/button5_text" />
+                android:onClick="displayToast"
+                android:text="@string/xyz_reader_text" />
 
             <Button
                 android:id="@+id/capstone_button"
                 style="@style/StandardButtonStyle.Capstone"
                 android:layout_below="@id/reader_button"
-                android:onClick="capstoneToast"
-                android:text="@string/button6_text" />
+                android:onClick="displayToast"
+                android:text="@string/capstone_text" />
 
         </RelativeLayout>
 
